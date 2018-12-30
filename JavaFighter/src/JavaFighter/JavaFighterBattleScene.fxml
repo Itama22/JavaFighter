@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorBattle" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFighter.BattleSceneController">
+   <children>
+      <ImageView fx:id="wombat1" fitHeight="340.0" fitWidth="425.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/mortal%20wombat.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="wombat2" fitHeight="340.0" fitWidth="425.0" layoutX="425.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/mortal%20wombat.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="president1" fitHeight="340.0" fitWidth="425.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/president%20evil.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="president2" fitHeight="340.0" fitWidth="425.0" layoutX="496.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/president%20evil.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waluigi1" fitHeight="340.0" fitWidth="425.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/waluigi.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="waluigi2" fitHeight="340.0" fitWidth="425.0" layoutX="425.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/waluigi.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wizard1" fitHeight="340.0" fitWidth="425.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/epic%20wizard.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wizard2" fitHeight="340.0" fitWidth="425.0" layoutX="496.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/epic%20wizard.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="attack" layoutX="75.0" layoutY="419.0" mnemonicParsing="false" onAction="#Attack" prefHeight="63.0" prefWidth="112.0" text="Attack!" />
+      <Button fx:id="finish" disable="true" layoutX="75.0" layoutY="489.0" mnemonicParsing="false" onAction="#Finish" prefHeight="44.0" prefWidth="229.0" text="Finish!!" />
+      <Button fx:id="block" layoutX="192.0" layoutY="419.0" mnemonicParsing="false" onAction="#Block" prefHeight="63.0" prefWidth="112.0" text="Block!" />
+      <GridPane gridLinesVisible="true" layoutX="346.0" layoutY="489.0" prefHeight="44.0" prefWidth="481.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="focusPaneZelle0" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle1" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="1">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle2" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle3" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="3">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle4" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="4">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle5" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="5">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle6" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="6">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle7" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="7">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle8" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="8">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="focusPaneZelle9" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="9">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </children>
+      </GridPane>
+      <Text layoutX="539.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hitpoints" wrappingWidth="95.806884765625">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font></Text>
+      <Text layoutX="559.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Focus">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Text>
+      <GridPane gridLinesVisible="true" layoutX="346.0" layoutY="406.0" prefHeight="44.0" prefWidth="481.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane fx:id="damagePaneZelle0" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle1" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="1">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle2" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="2">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle3" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="3">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle4" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="4">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle5" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="5">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle6" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="6">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle7" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="7">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle8" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="8">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="damagePaneZelle9" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="9">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X" x="8.0" y="40.0">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </children>
+      </GridPane>
+      <ImageView fx:id="focus" fitHeight="125.0" fitWidth="130.0" layoutX="604.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/pow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blockImage" fitHeight="304.0" fitWidth="316.0" layoutX="61.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/block.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="damage" fitHeight="125.0" fitWidth="130.0" layoutX="150.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/pow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyeLeft" fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/redEyes.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eyeRight" fitHeight="138.0" fitWidth="207.0" layoutX="172.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/redEyes.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="explosion" fitHeight="324.0" fitWidth="400.0" layoutX="438.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/Explosion.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="crater" fitHeight="340.0" fitWidth="388.0" layoutX="450.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/Crater.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="winner" fitHeight="520.0" fitWidth="850.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/Winner.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="youDied" fitHeight="664.0" fitWidth="834.0" layoutX="8.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../BeatYourEnemy/Fail.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
